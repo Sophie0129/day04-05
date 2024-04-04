@@ -1,0 +1,20 @@
+<%- include("./test") %>
+<hr />
+
+<% list.forEach(member => { %> id : <%= member.ID %><br />
+pwd : <%= member.PWD %><br />
+name :
+<a href="/member/member_view/<%= member.ID %>"> <%= member.NAME %><br /> </a>
+&nbsp; / &nbsp;
+<a href="/member/member_view/?id<%= member.ID %>">
+  <!--중간 ?id는 생략 가능 -->
+  <%= member.NAME %><br /> </a
+><br />
+addr : <%= member.ADDR %>
+<hr />
+<% }) %>
+<a href="/member/register_from">데이터 추가</a>
+
+
+
+

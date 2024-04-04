@@ -1,0 +1,10 @@
+
+<h3>-개인정보-</h3>
+id : <%= member.ID %><br />
+id : <%= member.PWD %><br />
+id : <%= member.NAME %><br />
+id : <%= member.ADDR %><br />
+<hr />
+<a href="/member/modify_form?id=<%= member.ID %>">수정</a>
+<a href="/member/delete/<%= member.ID %>">삭제</a>
+<a href="/member/list">목록이동</a>
